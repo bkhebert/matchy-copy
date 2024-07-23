@@ -21,19 +21,19 @@ C:
 E:
 */
 
-var search = function(animals, name){
-// create a for loop that goes through the animals Array
-    for(var i = 0; i < animals.length; i++){
-        // loop through the animalsArr to see if any names match
-        if(animals[i].name  === name){
-            return animals[i] ;
-        } else {
-        return null;
+function search(animalsArr, animalName){
+    // create a for loop that goes through the animals Array
+        for(var i = 0; i < animalsArr.length; i++){
+            // loop through the animalsArr to see if any names match
+            if(animalsArr[i].name  === animalName){
+                return animalsArr[i].name;
+            } else {
+            return null;
+            }
         }
+        return "why"
     }
-}
-
-
+    
 //////////////////////////////////////////////////////////////////////
 // Step 2 - Replace //////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
