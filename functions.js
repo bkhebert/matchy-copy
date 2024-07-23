@@ -20,15 +20,16 @@ O: an object
 C:
 E:
 */
-function search(animalsArr, animalName){
+
+var search = function(animals, name){
 // create a for loop that goes through the animals Array
-    for(i = 0; i < animalsArr.length; i++){
+    for(var i = 0; i < animals.length; i++){
         // loop through the animalsArr to see if any names match
-        if(animalsArr[i].name  === animalName){
-            return animalsArr[i];
-        }
-    } else {
+        if(animals[i].name  === name){
+            return animals[i] ;
+        } else {
         return null;
+        }
     }
 }
 
@@ -36,9 +37,6 @@ function search(animalsArr, animalName){
 //////////////////////////////////////////////////////////////////////
 // Step 2 - Replace //////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
-function replace(animals, name, replacement){
-    
-}
 
 
 //////////////////////////////////////////////////////////////////////
