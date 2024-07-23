@@ -9,7 +9,6 @@
  * and read every instruction carefully.
  */
 
-const { animals } = require("./data");
 
 //////////////////////////////////////////////////////////////////////
 // Step 1 - Search ///////////////////////////////////////////////////
@@ -24,8 +23,8 @@ function search(animalsArr, animalName){
     // create a for loop that goes through the animals Array
         for(var i = 0; i < animalsArr.length; i++){
             // loop through the animalsArr to see if any names match
-            if(animalsArr[i].name  === animalName){
-                return animalsArr[i];
+            if(animalsArr[i].name === animalName){
+                return animalsArr[i]
             } else { 
             return null;
             }
